@@ -41,8 +41,11 @@ public class SortTest {
     		
     		LocalDateTime end = LocalDateTime.now();
     		
-    		long diff = ChronoUnit.MILLIS.between(begin, end);    		
-    		sort.printArray(arr, x.toString() + " Ordered in " + diff + " MILLIS"); 
+    		long diff = ChronoUnit.MILLIS.between(begin, end);
+    		
+    		String msg = String.join(" ", x.toString(), "Ordered in", ""+ diff, "MILLIS");
+    		
+    		sort.printArray(arr, msg); 
         });
 	}
 }
