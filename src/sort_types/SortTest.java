@@ -35,7 +35,7 @@ public class SortTest {
         	final Sort sort = SortFactory.getSort( x );
     		
     		LocalDateTime begin = LocalDateTime.now();    		
-    		sort.printArray(arr, x.toString() + " Unordered");
+    		sort.printArray( arr, String.join(" ", x.toString(), "Unordered") );
     		
     		sort.sort( arr );
     		
